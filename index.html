@@ -1,3 +1,227 @@
-<h>
-  comming soon
-</h>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Welcome</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    overflow:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-150px;
+    left:-120px;
+    filter:blur(30px);
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(59,130,246,.18);
+    border-radius:50%;
+    bottom:-170px;
+    right:-120px;
+    filter:blur(40px);
+}
+
+.container{
+    position:relative;
+    width:min(900px,92%);
+    padding:60px;
+    border-radius:24px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+    text-align:center;
+    animation:fadeIn 1s ease;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18);
+    margin-bottom:25px;
+    font-size:.85rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.highlight{
+    color:#7dd3fc;
+}
+
+p{
+    max-width:700px;
+    margin:0 auto 35px;
+    color:#dbeafe;
+    font-size:1.08rem;
+    line-height:1.8;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:15px 34px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
+    background:#38bdf8;
+    color:#0f172a;
+}
+
+.primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(56,189,248,.45);
+}
+
+.secondary{
+    border:1px solid rgba(255,255,255,.25);
+    color:#fff;
+    background:rgba(255,255,255,.05);
+}
+
+.secondary:hover{
+    background:rgba(255,255,255,.12);
+    transform:translateY(-3px);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:50px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;
+    padding:24px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#7dd3fc;
+}
+
+.card p{
+    margin:0;
+    font-size:.95rem;
+    color:#dbeafe;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:700px){
+    .container{
+        padding:35px 25px;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="badge">Professional Landing Page</div>
+
+<h1>Create Beautiful Experiences with <span class="highlight">HTML & CSS</span></h1>
+
+<p>
+A modern, responsive landing page designed with clean typography,
+glassmorphism effects, smooth animations, and professional styling.
+Perfect as a portfolio homepage, product landing page, or GitHub Pages
+website.
+</p>
+
+<div class="buttons">
+<a href="#" class="btn primary">Get Started</a>
+<a href="#" class="btn secondary">Learn More</a>
+</div>
+
+<div class="features">
+
+<div class="card">
+<h3>⚡ Fast</h3>
+<p>Lightweight HTML and CSS with no external dependencies.</p>
+</div>
+
+<div class="card">
+<h3>📱 Responsive</h3>
+<p>Looks great on desktops, tablets, and mobile devices.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Modern</h3>
+<p>Glassmorphism design, gradients, and elegant UI components.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+```
